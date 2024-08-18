@@ -16,79 +16,145 @@
 <body>
     <header>
         <nav>
-            <div class="left">Animesh's Portfolio</div>
-            <div class="right">
+            <div id="left">Animesh's Portfolio</div>
+            <div id="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="#firstSection">Home</a></li>
+                    <li><a href="#educationSection">About</a></li>
+                    <li><a href="designs/png.png">My Profile</a></li>
+                    <li><a href="#secondSection">Projects</a></li>
+                    <li><a href="#contact-section">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="firstSection">
-            <div class="leftSection">Hi, My name is<span class="purple"> Animesh</span>
-                <div> and I am a passionate </div>
-                <div>web developer.</div>
+        <section id="firstSection">
+            <div id="leftSection">
+                <div>Hi, My name is <span class="purple">Animesh</span></div>
+                <div>and I am a passionate web developer.</div>
             </div>
-            <div class="rightSection">
-                <img src="designs/PngItem_1127587.png" alt="style">
+            <div id="rightSection">
+                <img src="designs/png.png" alt="style">
             </div>
-           
-
         </section>
 
-        <div class="buttons">
-            <button class="btn1">Hire me</button>
-            <button class="btn2">Contact</button>
+        <div id="buttons">
+            <a href="designs/animeshShip.pdf" download="Animesh_Pramanik_Resume.pdf">
+                <button id="btn1">Download Resume</button>
+            </a>
         </div>
-        <hr class="line">
+        <hr id="line">
+
+        <section id="educationSection">
+            <h1><img id="cap" src="designs/cap2.png">My Education</h1>
+            <p id="quote">(Education is not the learning of facts, but the training of the mind to think.)</p>
+            <div id="education-cards">
+                <div id="education-card">
+                    <div id="education-icon">
+                        <img src="designs/gal.jpeg" alt="Graduation Cap Icon">
+                    </div>
+                    <div id="education-details">
+                        <h2>BTech</h2>
+                        <p>Galgotias University</p>
+                        <p>2021 - Present</p>
+                    </div>
+                </div>
+                <div id="education-card">
+                    <div id="education-icon">
+                        <img src="designs/ayyappa.jpg" alt="School Icon">
+                    </div>
+                    <div id="education-details">
+                        <h2>12th Grade</h2>
+                        <p>Sree Ayyappa Public School, Bokaro</p>
+                        <p>2018 - 2020</p>
+                    </div>
+                </div>
+                <div id="education-card">
+                    <div id="education-icon">
+                        <img src="designs/dav.png" alt="School Icon">
+                    </div>
+                    <div id="education-details">
+                        <h2>10th Grade</h2>
+                        <p>DAV Public School, Kusunda, Dhanbad</p>
+                        <p>2018</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         
 
-        <section class="secondSection">
-            <div id="parttwo">
-                <h1>
-                    Past Experience
-                </h1>
-                <div id="firstexperience">
+        <hr id="line">
+
+        <section id="secondSection">
+            <h1>Past Experience</h1>
+            <div id="experience">
+                <div id="experience-item">
+                    <img src="designs/Screenshot (33).png" alt="">
+                    <div id="writings">
+                        <h2>Tic-Tac-Toe</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla optio dignissimos id laborum eum! Possimus aut rerum voluptate alias dolorem.</p>
+                    </div>
+                </div>
+                <div id="experience-item">
                     <img src="designs/Screenshot (4) - Copy.png" alt="">
                     <div id="writings">
                         <h2>Save Environment</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat dignissimos esse distinctio porro accusamus, excepturi commodi labore debitis ipsa?</p>
                     </div>
-                    
                 </div>
-                <div id="secondexperience">
-                    <div id="writings2">
+                <div id="experience-item">
+                    <img src="designs/Screenshot (5).png" alt="">
+                    <div id="writings">
                         <h2>Personal Portfolio</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dignissimos facilis perspiciatis maiores quo placeat, non molestias nobis qui?</p>
-                    </div>
-                    <img src="designs/Screenshot (5).png" alt="">
-                    
-                </div>
-                <div id="thirdexperience">
-                    <img src="designs/Screenshot (6).png" alt="">
-                    <div id="writings3">
-                        <h2>Youtube Clone</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla optio dignissimos id laborum eum! Possimus aut rerum voluptate alias dolorem.</p>
                     </div>
                 </div>
             </div>
         </section>
-        
 
+        <hr id="line">
 
+        <section id="contact-section">
+            <h1>Contact Me</h1>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </main>
-    <footer>
-        <div id="thanks">
-            <h1>Thankyou!</h1>
-        </div>
-    </footer>
 
+    <footer>
+        <div id="bottom-left">
+            <p id="greet">Thank you for visiting my portfolio. Connect with me over socials.</p>
+            
+        </div>
+
+        <div id="social-media">
+            <a href="https://www.instagram.com/animesh_pmk?igsh=MW9yMnVteWdvdGNmcA==" target="_blank">
+                <img src="designs/insta.png" alt="Instagram">
+            </a>
+            <a href="https://linkedin.com/in/animeshpramanik7809" target="_blank">
+                <img src="designs/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/animeshpmk" target="_blank">
+                <img src="designs/git.png" alt="GitHub">
+            </a>
+        </div>
+        <p>&copy; 2024 Animesh Pramanik. All rights reserved.</p>
+        <p>Designed with <img id="heart" src="designs/heart.png"> by Animesh</p>
+    </footer>
+    
 </body>
 
-</html> 
+</html>
